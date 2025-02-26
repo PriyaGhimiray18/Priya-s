@@ -1,0 +1,213 @@
+/* Basic Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('back.jpeg') no-repeat center center fixed;
+    background-size: cover;
+    color: #0c0000;
+}
+
+/* Header Section */
+header {
+    background-color: #0a000a;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* Section Styling */
+section {
+    background: rgba(0, 0, 0, 0.7); /* Dark overlay */
+    padding: 60px 20px;
+    border-top: 2px solid #ccc;
+    text-align: center;
+    color: #fff;
+}
+
+/* Home Section */
+#home {
+    text-align: center;
+    background-color: #e2aad1;
+    padding: 100px 20px;
+}
+
+#home h1 {
+    font-size: 40px;
+    color: #161414;
+}
+
+#home .tagline {
+    font-size: 25px;
+    color: #141111;
+}
+
+#home .cta-button {
+    display: inline-block;
+    background-color: #3aa0be;
+    color: #fff;
+    padding: 10px 20px;
+    margin-top: 15px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+#home .cta-button:hover {
+    background-color: #0056b3;
+}
+.home-content {
+    display: flex;         /* Arrange text and image side by side */
+    align-items: center;   /* Align items vertically */
+    justify-content: space-between; /* Push text and image apart */
+    flex-wrap: wrap;       /* Ensure responsiveness on smaller screens */
+}
+.text {
+    width: 60%;            /* Allocate space for text */
+}
+.profile-photo {
+    width: 250px;          /* Adjust the image size */
+    height: auto;          /* Maintain aspect ratio */
+    border: 3px solid #fff; /* Optional border */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Adds a shadow */
+}
+
+/* Hide Home Content in Other Sections */
+section:not(#home) h1,
+section:not(#home) .tagline {
+    display: none;
+}
+
+/* Container Styling */
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+}
+/* Experience Section Styling */
+#experience {
+    background-color: #0b0000;
+    padding: 60px 20px;
+    border-top: 2px solid #ccc;
+    text-align: center;
+}
+
+.job, .club {
+    background-color: #a09e9e;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.job h3, .club h3 {
+    color: #1c1a1a;
+    font-size: 24px;
+}
+
+.club h4 {
+    color: #373636;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.job ul, .club ul {
+    list-style-type: disc;
+    text-align: left;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.job ul li, .club ul li {
+    font-size: 18px;
+    color: #211c1c;
+    margin-bottom: 10px;
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #14006f;
+    color: #fff;
+}
+
+/* Form Styling */
+form {
+    background: rgba(196, 196, 196, 0.9); /* White background with slight transparency */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); /* Optional shadow */
+    max-width: 600px;
+    margin: 20px auto;
+}
+form label, form input, form textarea {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    font-size: 16px;
+    color: #070707;
+}
+
+form input, form textarea {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+form button {
+    background: #f53918;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+form button:hover {
+    background: #d9432a;
+}
+
+label {
+    display: block;
+    font-size: 16px;
+    margin-top: 10px;
+    color: #333;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    display: block;
+    width: 100%;
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px;
+    margin-top: 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
